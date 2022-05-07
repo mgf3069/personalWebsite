@@ -12,7 +12,7 @@ def project_page():
     return render_template('projects.html', title='Projects')
 
 
-@app.route('/contact')
+@app.route('/contact', methods=['GET', 'POST'])
 def contact_page():
     return render_template('contact.html', title='Contact')
 
@@ -25,3 +25,5 @@ def gallery_page():
 @app.route('/linkedIn')
 def linkedin_page():
     return redirect('https://www.linkedin.com/in/michael-fields-552845236/')
+
+
